@@ -17,7 +17,7 @@ public class FixedDepositController {
 		this.fixedDepositService = fixedDepositService;
 	}
 
-	public boolean submit() {
+	public boolean submit() throws Exception {
 		return fixedDepositService.createFixedDeposit(new FixedDepositDetails(
 				1, 10000, 365, "someemail@something.com"));
 	}
